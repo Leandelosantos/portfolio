@@ -34,7 +34,7 @@ const WrapperNav = styled.div`
   }
 
   &.shrink a {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
