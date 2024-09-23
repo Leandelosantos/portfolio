@@ -42,7 +42,7 @@ const WrapperHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("assets/moon1.jpg");
+  background-image: url("../assets/moon1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
