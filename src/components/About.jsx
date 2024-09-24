@@ -98,7 +98,7 @@ export const About = () => {
         <div className="descContainer" ref={typingRef}>
           <TypingComponent
             text={
-              "Apasionado por aprender y perfeccionar cada detalle. Transformo ideas en soluciones eficientes y escalables, garantizando calidad y resultados excepcionales. Siempre listo para enfrentar nuevos desafíos y agregar valor a cada proyecto."
+              "Passionate about learning and perfecting every detail. I transform ideas into efficient and scalable solutions, ensuring quality and exceptional results. Always ready to face new challenges and add value to every project."
             }
             eraseDelay={3000}
             typingDelay={1000}
