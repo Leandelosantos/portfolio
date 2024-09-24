@@ -47,7 +47,7 @@ const WrapperContact = styled.section`
     font-style: italic;
     position: absolute;
     font-weight: 600;
-    color: #d98a49;
+    color: #68ad8f;
     font-size: 50px;
     text-align: center;
     margin: 0 0 0 0.5%;
@@ -56,6 +56,17 @@ const WrapperContact = styled.section`
 
   .form {
     width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30% 0;
+    .title h3 {
+      margin-right: 20%;
+    }
+
+    .form {
+      width: 100%;
+    }
   }
 `;
 
@@ -86,14 +97,3 @@ export const Contact = () => {
     </WrapperContact>
   );
 };
-
-// export const Contacto = () => {
-//   return (
-//     <>
-//       <WrapperContact>
-//         <div data-tf-live="01J88WE4NBP56A3YWGBYXNJSYY"></div>
-//         <script src="//embed.typeform.com/next/embed.js"></script>
-//       </WrapperContact>
-//     </>
-//   );
-// };

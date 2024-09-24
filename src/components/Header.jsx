@@ -36,6 +36,18 @@ const WrapperNav = styled.div`
   &.shrink a {
     font-size: 16px;
   }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    max-width: 100%;
+    justify-content: space-around;
+
+    &.shrink {
+      max-width: 100%;
+      width: 90%;
+      margin: 1% 0;
+    }
+  }
 `;
 
 const WrapperHeader = styled.header`
@@ -47,6 +59,12 @@ const WrapperHeader = styled.header`
   background-position: center;
   background-size: cover;
   box-shadow: inset 0px -20px 20px 20px black;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 
   .textHeader {
     display: flex;
@@ -88,6 +106,7 @@ const WrapperHeader = styled.header`
     border-radius: 20px;
     background-color: transparent;
     color: #cbcbcb;
+    overflow: hidden;
   }
 
   .btnContainer a {
@@ -117,6 +136,16 @@ const WrapperHeader = styled.header`
     text-align: end;
     margin: 0;
     animation: wave 3s ease-in-out infinite;
+  }
+
+  @media (max-width: 480px) {
+    .btnContainer {
+      padding: 35% 0 0 0;
+    }
+
+    .btnContainer button {
+      width: 50%;
+    }
   }
 
   @keyframes wave {

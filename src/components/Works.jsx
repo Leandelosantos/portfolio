@@ -14,6 +14,7 @@ const WrapperWorks = styled.section`
   justify-content: center;
   align-items: center;
   padding: 10% 0;
+
   .worksContainer {
     display: flex;
     flex-flow: column wrap;
@@ -173,6 +174,28 @@ const WrapperWorks = styled.section`
   .work video:hover {
     box-shadow: 0 0 20px 0 #cbcbcb;
     border-color: #ffffffa6;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30% 0;
+
+    .worksContainer {
+      width: 100%;
+      gap: 40px;
+    }
+
+    .title {
+      width: auto;
+    }
+
+    .title h3 {
+      margin: 0 1% 0 10%;
+    }
+
+    .work {
+      width: 100%;
+      flex-flow: column nowrap;
+    }
   }
 `;
 

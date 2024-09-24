@@ -64,6 +64,17 @@ const WrapperFooter = styled.section`
     text-shadow: 0px 0px 20px #cbcbcb, 0px 0px 20px #cbcbcb,
       0px 0px 20px #cbcbcb, 0px 0px 20px #cbcbcb;
   }
+
+  @media (max-width: 480px) {
+    margin-top: 10%;
+
+    flex-direction: column;
+    gap: 50px;
+
+    .rrss {
+      width: auto;
+    }
+  }
 `;
 
 export const Footer = () => {

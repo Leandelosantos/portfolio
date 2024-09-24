@@ -43,6 +43,22 @@ const WrapperAbout = styled.section`
     text-align: right;
     font-size: 15px;
   }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: 30% 0;
+
+    .descContainer {
+      overflow: hidden;
+      padding: 5%;
+      margin: 0;
+    }
+
+    .imgContainer {
+      margin: 0;
+      width: 70%;
+    }
+  }
 `;
 
 export const About = () => {

@@ -109,6 +109,18 @@ const WrapperTech = styled.section`
     padding: 3% 2%;
     width: 100%;
   }
+
+  @media (max-width: 480px) {
+    padding: 30% 0;
+    .title {
+      width: auto;
+    }
+    .cards {
+      flex-flow: column wrap;
+      align-items: center;
+      gap: 30px;
+    }
+  }
 `;
 
 export const Technologies = () => {

@@ -47,6 +47,11 @@ const WrapperCard = styled.div`
     border: 1px solid #cbcbcb;
     border-radius: 10px;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 9%;
+  }
 `;
 
 export const CardSkills = ({

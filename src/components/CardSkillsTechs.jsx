@@ -123,6 +123,11 @@ const WrapperCard = styled.div`
   .contentCard2 img:nth-child(5) {
     animation-delay: 8s;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 9%;
+  }
 `;
 
 export const CardSkillsTechs = ({ img, img2, text }) => {
