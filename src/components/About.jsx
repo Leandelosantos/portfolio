@@ -46,7 +46,8 @@ const WrapperAbout = styled.section`
 
   @media (max-width: 480px) {
     flex-direction: column;
-    padding: 30% 0;
+    padding: 0;
+    margin: 30% 0;
 
     .descContainer {
       overflow: hidden;

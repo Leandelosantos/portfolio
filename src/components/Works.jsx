@@ -193,7 +193,7 @@ const WrapperWorks = styled.section`
     }
 
     .work {
-      width: 100%;
+      width: 90%;
       flex-flow: column nowrap;
     }
   }
