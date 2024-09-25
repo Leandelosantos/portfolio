@@ -50,6 +50,10 @@ const WrapperTyping = styled.div`
   width: 100%;
   visibility: ${(props) => (props.isVisible ? "visible" : "hidden")};
   background-color: transparent;
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
 `;
 
 export const TypingComponent = ({

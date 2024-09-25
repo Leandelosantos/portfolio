@@ -52,7 +52,7 @@ const WrapperAbout = styled.section`
     .descContainer {
       overflow: hidden;
       padding: 5%;
-      margin: 0;
+      margin: 0 0 10% 0;
     }
 
     .imgContainer {
@@ -105,7 +105,7 @@ export const About = () => {
             eraseSpeed={50}
             speed={100}
             fontSize={"40px"}
-            height={"450px"}
+            height={innerWidth <= 480 ? "auto" : "450px"}
             startTyping={startTyping}
             keyProp={keyProp}
           />
