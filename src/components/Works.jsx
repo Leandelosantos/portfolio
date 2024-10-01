@@ -3,6 +3,9 @@ import Video from "./Video";
 import removeSvg from "../assets/removeSvg.svg";
 import starSvg from "../assets/starSvg.svg";
 import { Imagen } from "./Imagen";
+import videoMastin from "../assets/video-mastin.mp4";
+import promoYa from "../assets/promoYa2.mp4";
+import fenedur from "../assets/fenedur.mp4";
 
 const WrapperWorks = styled.section`
   margin: 0;
@@ -142,7 +145,7 @@ const WrapperWorks = styled.section`
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
-    gap: 3em;
+    gap: 2em;
     transition: transform 0.3s ease;
     width: 60%;
   }
@@ -210,17 +213,9 @@ export const Works = () => {
               My Creations in <spam className="border">Action</spam>
               <spam className="wave">Action</spam>
             </h3>
-            {/* <div className="thingsContainer">
-              <h3 className="border">My Creations in Action</h3>
-              <h3 className="wave">My Creations in Action</h3>
-            </div> */}
           </div>
           <div className="work">
-            <Video
-              src={
-                "https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4"
-              }
-            />
+            <Video src={videoMastin} />
             <div className="descContainer">
               <div className="date">
                 <p>Junio 23'</p>
@@ -229,60 +224,66 @@ export const Works = () => {
               <div className="desc">
                 <h5>Mas - Tin</h5>
                 <p>
-                  Sitio Web para la empresa Mas-Tin con cinco secciones, login,
-                  base de datos y ABM para productos.
+                  Website for the company Mas-Tin with five sections, user
+                  login, database integration, and a CRUD system for product
+                  management
                 </p>
                 <div className="items">
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
-                  <p>Built the product from 0 → 1</p>
+                  <p>Built the product from 0 → 100</p>
+                </div>
+                <div className="items">
+                  <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
+                  <p>Full Responsive</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="work">
-            <Video
-              src={
-                "https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4"
-              }
-            />
+            <Video src={promoYa} />
             <div className="descContainer">
               <div className="date">
-                <p>Junio 23'</p>
+                <p>Sept 24'</p>
                 <Imagen src={removeSvg} width={"60px"} alt={"remove icon"} />
               </div>
               <div className="desc">
-                <h5>Mas - Tin</h5>
+                <h5>Movistar</h5>
                 <p>
-                  Sitio Web para la empresa Mas-Tin con cinco secciones, login,
-                  base de datos y ABM para productos.
+                  Website created in WordPress for the official agent of the
+                  international company Movistar. Design, development, and
+                  maintenance of the site.
                 </p>
                 <div className="items">
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
-                  <p>Built the product from 0 → 1</p>
+                  <p>Complete redesign of the website</p>
+                </div>
+                <div className="items">
+                  <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
+                  <p>Full Responsive</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="work">
-            <Video
-              src={
-                "https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4"
-              }
-            />
+            <Video src={fenedur} />
             <div className="descContainer">
               <div className="date">
-                <p>Junio 23'</p>
+                <p>Jan 21'</p>
                 <Imagen src={removeSvg} width={"60px"} alt={"remove icon"} />
               </div>
               <div className="desc">
-                <h5>Mas - Tin</h5>
+                <h5>Fenedur</h5>
                 <p>
-                  Sitio Web para la empresa Mas-Tin con cinco secciones, login,
-                  base de datos y ABM para productos.
+                  Development for Fenedur S.A., an international supplier of
+                  well-known adhesive brands worldwide.
                 </p>
                 <div className="items">
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
-                  <p>Built the product from 0 → 1</p>
+                  <p>Built the product from 0 → 100</p>
+                </div>
+                <div className="items">
+                  <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
+                  <p>Full Responsive</p>
                 </div>
               </div>
             </div>
