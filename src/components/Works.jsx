@@ -199,6 +199,12 @@ const WrapperWorks = styled.section`
       width: 90%;
       flex-flow: column nowrap;
     }
+
+    .work video {
+      width: 400px;
+      height: 250px;
+      padding: 10px;
+    }
   }
 `;
 
