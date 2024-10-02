@@ -94,7 +94,7 @@ export const About = () => {
 
   return (
     <>
-      <WrapperAbout>
+      <WrapperAbout id="about">
         <div className="descContainer" ref={typingRef}>
           <TypingComponent
             text={
@@ -111,7 +111,7 @@ export const About = () => {
             fontWeight={300}
           />
         </div>
-        <div className="imgContainer" id="about">
+        <div className="imgContainer">
           <Imagen src={foto} alt="icon" width={"80%"} />
         </div>
       </WrapperAbout>

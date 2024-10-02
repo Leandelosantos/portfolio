@@ -227,7 +227,9 @@ export const Works = () => {
             </h3>
           </div>
           <div className="work">
-            <Video src={videoMastin} />
+            <a href="https://mas-tin.com/" target="_blank">
+              <Video src={videoMastin} />
+            </a>
             <div className="descContainer">
               <div className="date">
                 <p>June 23'</p>
