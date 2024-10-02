@@ -187,6 +187,11 @@ const WrapperWorks = styled.section`
       gap: 40px;
     }
 
+    .descContainer {
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
     .title {
       width: auto;
     }
@@ -201,9 +206,10 @@ const WrapperWorks = styled.section`
     }
 
     .work video {
-      width: 400px;
+      width: 358px;
       height: 250px;
       padding: 10px;
+      overflow: hidden;
     }
   }
 `;
@@ -224,7 +230,7 @@ export const Works = () => {
             <Video src={videoMastin} />
             <div className="descContainer">
               <div className="date">
-                <p>Junio 23'</p>
+                <p>June 23'</p>
                 <Imagen src={removeSvg} width={"60px"} alt={"remove icon"} />
               </div>
               <div className="desc">
