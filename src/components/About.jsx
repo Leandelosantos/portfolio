@@ -108,6 +108,7 @@ export const About = () => {
             height={innerWidth <= 480 ? "auto" : "450px"}
             startTyping={startTyping}
             keyProp={keyProp}
+            fontWeight={300}
           />
         </div>
         <div className="imgContainer" id="about">

@@ -13,6 +13,7 @@ export const WrapperLinks = styled.div`
   }
   a:hover {
     font-weight: 500;
+    color: #ffffff;
     text-shadow: 0px 0px 7px #cbcbcb, 0px 0px 10px #cbcbcb, 0px 0px 21px #cbcbcb,
       0px 0px 42px #cbcbcb;
     /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,

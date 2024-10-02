@@ -50,6 +50,7 @@ const WrapperTyping = styled.div`
   width: 100%;
   visibility: ${(props) => (props.isVisible ? "visible" : "hidden")};
   background-color: transparent;
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "")};
 
   @media (max-width: 480px) {
     height: auto;
@@ -66,9 +67,15 @@ export const TypingComponent = ({
   height,
   startTyping,
   keyProp,
+  fontWeight,
 }) => {
   return (
-    <WrapperTyping fontSize={fontSize} height={height} isVisible={startTyping}>
+    <WrapperTyping
+      fontSize={fontSize}
+      height={height}
+      isVisible={startTyping}
+      fontWeight={fontWeight}
+    >
       {startTyping && (
         <TypingEffect
           key={keyProp}

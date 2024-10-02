@@ -61,6 +61,7 @@ const WrapperFooter = styled.section`
   }
 
   a:hover {
+    color: #fff;
     text-shadow: 0px 0px 20px #cbcbcb, 0px 0px 20px #cbcbcb,
       0px 0px 20px #cbcbcb, 0px 0px 20px #cbcbcb;
   }
