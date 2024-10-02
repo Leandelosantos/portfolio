@@ -21,7 +21,7 @@ const VideoContainer = styled.div`
   }
 `;
 
-const Video = ({ src }) => {
+const Video = ({ src, img }) => {
   // manejo de apoyar el mouse
   const handleMouseEnter = (e) => {
     const vid = e.target;
@@ -50,6 +50,7 @@ const Video = ({ src }) => {
         ref={videoRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        poster={img}
       >
         <source src={src} type="video/mp4" />
       </video>

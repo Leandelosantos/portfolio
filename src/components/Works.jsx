@@ -6,6 +6,7 @@ import { Imagen } from "./Imagen";
 import videoMastin from "../assets/video-mastin.mp4";
 import promoYa from "../assets/promoYa2.mp4";
 import fenedur from "../assets/fenedur.mp4";
+import posterMastin from "../assets/posterMastin.png";
 
 const WrapperWorks = styled.section`
   margin: 0;
@@ -228,7 +229,7 @@ export const Works = () => {
           </div>
           <div className="work">
             <a href="https://mas-tin.com/" target="_blank">
-              <Video src={videoMastin} />
+              <Video src={videoMastin} poster={posterMastin} />
             </a>
             <div className="descContainer">
               <div className="date">
