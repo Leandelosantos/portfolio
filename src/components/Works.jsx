@@ -7,6 +7,9 @@ import videoMastin from "../assets/video-mastin.mp4";
 import promoYa from "../assets/promoYa2.mp4";
 import fenedur from "../assets/fenedur.mp4";
 import posterMastin from "../assets/posterMastin.png";
+import posterFenedur from "../assets/posterFenedur.png";
+import posterPromoya from "../assets/posterPromoYa.png";
+import gifArrow from "../assets/gifArrow.gif";
 
 const WrapperWorks = styled.section`
   margin: 0;
@@ -27,7 +30,7 @@ const WrapperWorks = styled.section`
     align-items: center;
     padding: 2%;
     gap: 20%;
-    width: 80%;
+    width: auto;
   }
 
   .title {
@@ -172,6 +175,31 @@ const WrapperWorks = styled.section`
     font-size: 18px;
   }
 
+  .visit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .visit img {
+    filter: contrast(0);
+  }
+
+  a {
+    text-decoration: none;
+    color: #cbcbcb;
+    display: flex;
+    gap: 15%;
+    width: 25%;
+    font-weight: 600;
+  }
+
+  a:hover {
+    text-shadow: 0px 0px 20px #cbcbcb, 0px 0px 20px #cbcbcb;
+  }
+
   .work:hover {
     transform: scale(1.1);
   }
@@ -228,9 +256,7 @@ export const Works = () => {
             </h3>
           </div>
           <div className="work">
-            <a href="https://mas-tin.com/" target="_blank">
-              <Video src={videoMastin} poster={posterMastin} />
-            </a>
+            <Video src={videoMastin} poster={posterMastin} />
             <div className="descContainer">
               <div className="date">
                 <p>June 23'</p>
@@ -251,11 +277,25 @@ export const Works = () => {
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
                   <p>Full Responsive</p>
                 </div>
+                <div className="visit">
+                  <a
+                    href="https://mas-tin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Imagen
+                      src={gifArrow}
+                      width={"25px"}
+                      alt={"highlight icon"}
+                    />
+                    <p>Visit</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="work">
-            <Video src={promoYa} />
+            <Video src={promoYa} poster={posterPromoya} />
             <div className="descContainer">
               <div className="date">
                 <p>Sept 24'</p>
@@ -276,11 +316,25 @@ export const Works = () => {
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
                   <p>Full Responsive</p>
                 </div>
+                <div className="visit">
+                  <a
+                    href="https://promoya.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Imagen
+                      src={gifArrow}
+                      width={"25px"}
+                      alt={"highlight icon"}
+                    />
+                    <p>Visit</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="work">
-            <Video src={fenedur} />
+            <Video src={fenedur} poster={posterFenedur} />
             <div className="descContainer">
               <div className="date">
                 <p>Jan 21'</p>
@@ -300,10 +354,24 @@ export const Works = () => {
                   <Imagen src={starSvg} width={"20px"} alt={"highlight icon"} />
                   <p>Full Responsive</p>
                 </div>
+                <div className="visit">
+                  <a
+                    href="https://fenedur-institutional.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Imagen
+                      src={gifArrow}
+                      width={"25px"}
+                      alt={"highlight icon"}
+                    />
+                    <p>Visit</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="work">
+          {/* <div className="work">
             <Video
               src={
                 "https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4"
@@ -326,7 +394,7 @@ export const Works = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </WrapperWorks>
     </>

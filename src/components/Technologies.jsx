@@ -119,6 +119,7 @@ const WrapperTech = styled.section`
       flex-flow: column wrap;
       align-items: center;
       gap: 30px;
+      width: 90%;
     }
   }
 `;

@@ -20,7 +20,7 @@ const WrapperNav = styled.div`
   z-index: 5656;
 
   &.shrink {
-    max-width: 20%;
+    max-width: 25%;
     margin: 1% 40%;
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
     backdrop-filter: blur(5px); /* Aplica el desenfoque */
@@ -71,7 +71,7 @@ const WrapperHeader = styled.header`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10%;
+    padding: 8%;
     height: 900px;
   }
   .textHeader h1 {
@@ -87,14 +87,13 @@ const WrapperHeader = styled.header`
     flex-flow: row nowrap;
     justify-content: center;
     width: 100%;
-    padding-left: 52%;
   }
   .btnContainer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     width: 100%;
-    padding: 8% 0 0 0;
+    margin-top: 10%;
   }
 
   .btnContainer button {
@@ -238,6 +237,7 @@ export const Header = () => {
             speed={100}
             fontSize={"60px"}
             startTyping={startTyping}
+            height={"70px"}
           />
           <div className="thingsContainer">
             <p className="border">things</p>

@@ -14,7 +14,7 @@ const WrapperAbout = styled.section`
   justify-content: center;
   align-items: center;
   padding: 10% 0;
-  gap: 20%;
+  gap: 5%;
   .imgContainer {
     display: flex;
     justify-content: center;
@@ -28,9 +28,16 @@ const WrapperAbout = styled.section`
     border: 1px solid #cbcbcb;
     border-radius: 30px;
     box-shadow: 0px 0px 4px 2px #cbcbcb;
+    transition: transform 0.3s ease;
+  }
+
+  .imgContainer img:hover {
+    transform: scale(0.9);
+    filter: none;
   }
   .descContainer {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -42,6 +49,21 @@ const WrapperAbout = styled.section`
   .descContainer p {
     text-align: right;
     font-size: 15px;
+  }
+
+  .descContainer h2 {
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 1px 1px 12px #cbcbcb;
+    text-align: center;
+  }
+
+  .vision {
+    font-style: italic;
+    font-family: NyghtSerif;
+    font-size: 36px;
+    font-weight: 500;
   }
 
   @media (max-width: 480px) {
@@ -57,7 +79,10 @@ const WrapperAbout = styled.section`
 
     .imgContainer {
       margin: 0;
-      width: 70%;
+    }
+
+    .imgContainer img {
+      width: 65%;
     }
   }
 `;
@@ -96,6 +121,9 @@ export const About = () => {
     <>
       <WrapperAbout id="about">
         <div className="descContainer" ref={typingRef}>
+          <h2>
+            Exploring my growth and <span className="vision">vision</span>
+          </h2>
           <TypingComponent
             text={
               "Passionate about learning and perfecting every detail. I transform ideas into efficient and scalable solutions, ensuring quality and exceptional results. Always ready to face new challenges and add value to every project."
@@ -104,15 +132,15 @@ export const About = () => {
             typingDelay={1000}
             eraseSpeed={50}
             speed={100}
-            fontSize={"40px"}
-            height={innerWidth <= 480 ? "auto" : "450px"}
+            fontSize={"24px"}
+            height={innerWidth <= 480 ? "auto" : "250px"}
             startTyping={startTyping}
             keyProp={keyProp}
             fontWeight={300}
           />
         </div>
         <div className="imgContainer">
-          <Imagen src={foto} alt="icon" width={"80%"} />
+          <Imagen src={foto} alt="icon" width={"50%"} />
         </div>
       </WrapperAbout>
     </>

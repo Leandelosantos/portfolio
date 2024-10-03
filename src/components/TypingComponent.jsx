@@ -1,48 +1,11 @@
-// import TypingEffect from "react-typing-effect";
-// import styled from "styled-components";
-
-// const WrapperTyping = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: flex-start;
-//   margin: 0;
-//   color: white;
-//   height: ${(props) => (props.height ? props.height : "auto")};
-//   font-size: ${(props) => (props.fontSize ? props.fontSize : "60px")};
-//   width: 100%;
-// `;
-
-// export const TypingComponent = ({
-//   text,
-//   typingDelay,
-//   eraseDelay,
-//   speed,
-//   eraseSpeed,
-//   fontSize,
-//   height,
-// }) => {
-//   return (
-//     <WrapperTyping fontSize={fontSize} height={height}>
-//       <TypingEffect
-//         text={[text]}
-//         speed={speed}
-//         eraseSpeed={eraseSpeed}
-//         eraseDelay={eraseDelay}
-//         typingDelay={typingDelay}
-//       />
-//     </WrapperTyping>
-//   );
-// };
-
 import TypingEffect from "react-typing-effect";
 import styled from "styled-components";
 
 const WrapperTyping = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   color: white;
   height: ${(props) => (props.height ? props.height : "auto")};
@@ -53,7 +16,8 @@ const WrapperTyping = styled.div`
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "")};
 
   @media (max-width: 480px) {
-    height: auto;
+    height: 400px;
+    text-align: center;
   }
 `;
 
@@ -84,6 +48,7 @@ export const TypingComponent = ({
           eraseSpeed={eraseSpeed}
           eraseDelay={eraseDelay}
           typingDelay={typingDelay}
+          cursor={" "}
         />
       )}
     </WrapperTyping>
